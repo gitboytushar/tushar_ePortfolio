@@ -10,17 +10,19 @@
          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
    </style>
+
+   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
    <!-- <h1>This is HTML based Resume</h1> -->
 
    <!-- image tag in html used to present my profile photo with little css styling-->
-   <img style="border-radius: 5%;" src="./assets/Passport Photo'23.jpeg" alt="my profile photo" height="173" width="148" >
+   <img style="border-radius: 6%;" src="./assets/profile pic.jpeg" alt="my profile photo" height="150" width="150" >
 
    <h2>Tushar Verma</h2>
 
    <!-- different types heading tags are used -->
-   <h3>CSE Student opted Cloud specialization (Present semester: 7th)</h3>
+   <h3>CSE Student with Cloud specialization (Present semester: 7th)</h3>
    <h4>Gurgaon, Haryana, India</h4>
 
    <!-- anchor tag in html used here to link others html files -->
@@ -28,7 +30,7 @@
 
    <hr>
 
-   <h4>Introduction</h4>
+   <h4 style="text-decoration: underline;">Introduction</h4>
    <!-- used paragraph tag in html -->
    <p style="font-size: 18px">
       CSE student likes development and coding, dedicated for becoming a better developer. Being a creative and proactive
@@ -45,7 +47,7 @@
    <hr>
 
    <!-- break tags are used from here -->
-   <h4>Education</h4>
+   <h4 style="text-decoration: underline;">Education</h4>
    <p>
       School - Kendriya Vidyalaya No. 1 AFS GGN <br> 12th Percentage: 80+
       <br><br>
@@ -55,27 +57,50 @@
    <hr>
 
    <!-- list tags in html are used here -->
-   <h4>Projects</h4>
+   <h4 style="text-decoration: underline;">Projects</h4>
       <ol>
-         <li>BASIC FORM BASED WEB APPLICATION • POOLIT
-            <ul>
+         <li>WEB APPLICATION • POOLIT
+            <ul style="line-height: 1.5;">
                <br>
                <li>Role: Backend Development</li>
-               <li>6th semester</li>
-               <li>Objective: Our Car-Pooling Service helps in daily commutes by connecting vehicle owners and riders along common routes, that will saves money and reduces carbon footprint. Also boosting interactions between new people in this digital era.</li>
-               <li>Learned: NodeJs, ExpressJs, MongoDB, Leadership</li>
+               <li>6th semester college project</li>
+               <li>Objective: A basic form based Car-Pooling Service designed to help daily commuters by connecting vehicle owners and riders along a common route, that will reduce air pollution and traffic as a result.</li>
+               <li>Learned and Implemented: Basic (NodeJs, ExpressJs, MongoDB), Leadership, Teamwork</li>
             </ul>
          </li>
          
          <br>
+
+         <li>WEB APPLICATION • Weather App
+            <ul style="line-height: 1.5;">
+               <br>
+               <li>Role: Full stack Development</li>
+               <li>Personal project #1</li>
+               <li>Objective: A basic web app that tells the current weather of your searched city by collecting data from open-weather-map api.</li>
+               <li>Learned and Implemented: HTML, CSS, JS, API calls, Project development & deployment</li>
+            </ul>
+         </li>
+         <a href="https://github.com/gitboytushar/weatherApp">
+            <button class="btn-a">
+               Source Code
+            </button>
+         </a>
+         <a href="https://weather-app-nine-ochre.vercel.app/">
+            <button class="btn-b">
+               Live Preview
+            </button>
+         </a>
          
-         <li>CONSOLE APPLICATION • BANK LOAN APPROVAL
-            <ul>
+         
+         <br><br>
+         
+         <li>CLI APPLICATION • BANK LOAN APPROVAL
+            <ul style="line-height: 1.5;">
                <br>
                <li>Role: Analysing Patterns given by classifiers to generate Result</li>
-               <li>5th semester</li>
+               <li>5th semester college project (AIML)</li>
                <li>Objective: Banks uses pattern recognition to prevent loan defaults by analysing credit information of loan applicants.</li>
-               <li>Learned: Data analysis, machine learning, and the Teamwork.</li>
+               <li>Learned and Implemented: Data analysis, machine learning, and the Teamwork.</li>
             </ul>
          </li>
       </ol>
@@ -83,7 +108,7 @@
    <hr>
 
    <!-- nesting of list tags are used here -->
-   <h4>Skills</h4>
+   <h4 style="text-decoration: underline;">Skills</h4>
    <ol>
       <li>
          Technical ones:
@@ -114,9 +139,6 @@
                   <li>Git and Github</li>
                </ul>
             </li>
-            <!-- <li>Graphic Designing</li>
-            <li>Creative Photography</li>
-            <li>Video Editing</li> -->
          </ul>
       </li>
 
@@ -126,12 +148,10 @@
          Soft ones:
          <ul>
             <li>Teamwork</li>
-            <li>Problem solving</li>
-            <li>Creative thinking</li>
-            <li>Versatile and Adaptable</li>
+            <li>Problem solver</li>
+            <li>Creative and Versatile</li>
             <li>Dedicated</li>
             <li>Optimistic</li>
-            <li>Friendly</li>
          </ul> 
       </li>   
    </ol>
@@ -139,19 +159,19 @@
    <hr>
 
    <!-- link to my badges earned by using anchor tags -->
-   <h4>Checkout My Badges Earned in Cloud Computing</h4>
+   <h4 style="text-decoration: underline;">Badges I've Earned in Cloud Computing courses</h4>
    <ol>
       <li>
-         <a href="https://www.cloudskillsboost.google/public_profiles/ef2a273a-f0be-44d9-bbfd-49b17b329797" target="_blank">Google Cloud Provider | 2022</a>
+         <a class="bdg" href="https://www.cloudskillsboost.google/public_profiles/ef2a273a-f0be-44d9-bbfd-49b17b329797" target="_blank">Google Cloud Provider | 2022</a>
       </li>
       <li>
-         <a href="https://www.credly.com/users/tushar-verma.c4e5ab35" target="_blank">Amazon Web Services | 2022, 2023</a>
+         <a class="bdg" href="https://www.credly.com/users/tushar-verma.c4e5ab35" target="_blank">Amazon Web Services | 2022, 2023</a>
       </li>
    </ol>
 
    <hr>
 
-   <br><br><br>
+   <br><br>
    <!-- footer tag is used here -->
    <footer>
       <p>© Tushar Verma. All rights reserved.</p>

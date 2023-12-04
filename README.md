@@ -1,3 +1,3 @@
 
 # my-website-live
-learning git and deploying my e-portfolio using github pages.
+learned git and deploying my portfolio website using github pages.

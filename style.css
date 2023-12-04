@@ -1,0 +1,28 @@
+a{
+   text-decoration: none;
+}
+button{
+   border: none;
+   background-color: rgb(224, 224, 224);
+   padding: 8px 8px 8px 8px;
+   border-radius: 6px;
+   margin-top: 8px;
+}
+button:hover{
+   background-color: rgb(76, 76, 76);
+   color: white;
+   font-weight: bold;
+}
+.btn-a{
+   margin-left: 40px;
+}
+.btn-b {
+   margin-left: 5px;
+}
+.bdg{
+   text-decoration: none;
+}
+.bdg:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
