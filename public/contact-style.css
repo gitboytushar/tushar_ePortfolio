@@ -1,0 +1,53 @@
+* {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   margin: 0;
+}
+html{
+   background-color: black;
+}
+.card{
+   background-color: white;
+   max-width: 535px;
+   padding: 25px;
+   border: 6px solid yellow;
+   border-radius: 15px;
+   margin-top: 20px;
+
+   position: relative;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+.icon {
+   height: 200px;
+   width: 200px;
+}
+
+.info {
+   border: none;
+   background-color: rgb(255, 255, 255);
+   border-radius: 30px;
+
+   cursor: pointer;
+
+   /* learned how to align icon and the text next to it on same line */
+   display: flex;
+   align-items: center;
+
+   margin: 9px;
+   padding: 15px 25px 15px 25px;
+}
+
+.detail {
+   margin-left: 10px;
+}
+
+img {
+   height: 28px;
+}
+.in-side{
+   display: inline-block;
+   margin: 0;
+   position: fixed;
+}
