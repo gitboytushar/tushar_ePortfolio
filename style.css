@@ -3,7 +3,7 @@
 }
 
 html {
-   background-color: black;
+   background: radial-gradient(rgb(188, 188, 255), rgb(0, 0, 159));
 }
 
 .container {
@@ -19,6 +19,7 @@ html {
    padding: 20px;
    border-radius: 10px;
    max-width: 800px;
+   border: none;
 }
 
 hr {
