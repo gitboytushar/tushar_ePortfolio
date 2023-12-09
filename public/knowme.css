@@ -33,3 +33,26 @@ img {
    max-width: 9.37rem;
    margin-right: 6.25rem;
 }
+
+/* making this page responsive for smartphone */
+@media screen and (max-width: 37.5rem) {
+   .container {
+      max-width: 45%;
+      display: block;
+   }
+
+   .text {
+      width: 8rem;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+   }
+
+   img {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-top: 1rem;
+   }
+}
