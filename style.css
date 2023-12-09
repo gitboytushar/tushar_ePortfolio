@@ -160,8 +160,8 @@ button:hover {
 
 /* making the webpage responsive using media queriers */
 
-/* @media screen and (max-width: 26.8rem) {
+@media screen and (max-width: 26.8rem) {
    .container {
-      max-width: 25rem;
+      max-width: 0.625rem;
    }
-} */
+}
