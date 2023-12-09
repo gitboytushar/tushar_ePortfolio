@@ -3,32 +3,36 @@
 
    margin: 0;
 }
-html{
+
+html {
    background-color: black;
 }
-h3{
+
+h3 {
    font-weight: lighter;
 }
-img{
-   height: fit-content;
-   max-width: 400px;
-   margin-left: 30px;
-   border: none;
-   border-radius: 10px;
-}
-.number{
-      display: flex;
-      align-items: center;
 
-      background-color: white;
-      max-width: 535px;
-      padding: 25px;
-      border: 6px solid yellow;
-      border-radius: 15px;
-      margin-top: 10px;
-   
-      /* to align things in page center */
-      position: relative;
-      left: 50%;
-      transform: translate(-50%, 0);
+img {
+   height: fit-content;
+   max-width: 25rem;
+   margin-left: 1.87rem;
+   border: none;
+   border-radius: 0.62rem;
+}
+
+.number {
+   display: flex;
+   align-items: center;
+
+   background-color: white;
+   max-width: 33.4rem;
+   padding: 1.56rem;
+   border: 0.37rem solid yellow;
+   border-radius: 0.93rem;
+   margin-top: 0.62rem;
+
+   /* to align things in page center */
+   position: relative;
+   left: 50%;
+   transform: translate(-50%, 0);
 }

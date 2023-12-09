@@ -8,11 +8,11 @@ html{
 }
 .card{
    background-color: white;
-   max-width: 535px;
-   padding: 25px;
-   border: 6px solid yellow;
-   border-radius: 15px;
-   margin-top: 20px;
+   max-width: 33.4rem;
+   padding: 1.56rem;
+   border: 0.37rem solid yellow;
+   border-radius: 0.93rem;
+   margin-top: 1.25rem;
 
    position: relative;
    left: 50%;
@@ -20,14 +20,14 @@ html{
 }
 
 .icon {
-   height: 200px;
-   width: 200px;
+   height: 12.5rem;
+   width: 12.5rem;
 }
 
 .info {
    border: none;
    background-color: rgb(255, 255, 255);
-   border-radius: 30px;
+   border-radius: 1.87rem;
 
    cursor: pointer;
 
@@ -35,16 +35,16 @@ html{
    display: flex;
    align-items: center;
 
-   margin: 9px;
-   padding: 15px 25px 15px 25px;
+   margin: 0.5rem;
+   padding: 0.93rem 1.56rem 0.93rem 1.56rem;
 }
 
 .detail {
-   margin-left: 10px;
+   margin-left: 0.62rem;
 }
 
 img {
-   height: 28px;
+   height: 1.75rem;
 }
 .in-side{
    display: inline-block;
