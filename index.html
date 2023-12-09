@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>e-Portfolio</title>
+   <title>tusharverma-portfolio</title>
 
    <link rel="stylesheet" href="./style.css">
 </head>
@@ -12,7 +12,7 @@
 <body>
 
    <div class="container">
-      <img class="dp" src="./assets/profile pic.jpeg" alt="my profile photo" height="150" width="150">
+      <img id="profile-pic" class="dp" src="./assets/profile pic.jpeg" alt="my profile photo" height="150" width="150">
 
       <div class="intro">
          <h2 class="intro-text">Tushar Verma</h2>
@@ -23,15 +23,14 @@
       </div>
       <br>
       <a class="contact-btn" href="./public/contact.html">Contact Me</a>
-      <br>
+
       <a class="checkout" href="./public/knowme.html">Connect+</a>
       <a class="checkout" href="./public/hobbies.html">My Hobbies</a>
    </div>
 
    <div class="container">
       <h4>Introduction</h4>
-
-      <p class="desc" style="font-size: 1.12rem">
+      <p class="desc" id="intro">
          CSE student likes development and coding, dedicated for becoming a better developer. Being a creative and
          proactive
          person, Seeking for an opportunity to grow professionally.
@@ -41,27 +40,26 @@
    <div class="container">
       <!-- break tags are used from here -->
       <h4>Education</h4>
-      <p>
+      <p class="desc">
          School - Kendriya Vidyalaya No. 1 AFS GGN <br> 12th Percentage: 80+
-         <br><br>
+      </p>
+      <p class="desc">
          B.Tech '2024 - The Northcap University, GGN <br> CGPA: ~8
       </p>
    </div>
 
    <div class="container">
-      <div class="desc">
-
-         <h4>Projects</h4>
+      <h4>Projects</h4>
+      <div class="desc" id="info">
          <ol>
             <li>WEB APPLICATION • POOLIT
-               <ul style="line-height: 1.5;">
+               <ul id="sub-project-info">
                   <br>
                   <li>Role: Backend Development</li>
                   <li>6th semester college project</li>
-                  <li>Objective: A basic form based Car-Pooling Service designed to help daily commuters by
-                     connecting
-                     vehicle
-                     owners and riders along a common route, that will reduce air pollution and traffic as a result.
+                  <li>Objective: A basic form based Car-Pooling Service designed to help daily commuters by connecting
+                     vehicle owners and riders along a common route, that will reduce air pollution and traffic as a
+                     result.
                   </li>
                   <li>Learned and Implemented: Basic (NodeJs, ExpressJs, MongoDB), Leadership, Teamwork</li>
                </ul>
@@ -70,7 +68,7 @@
             <br>
 
             <li>WEB APPLICATION • Weather App
-               <ul style="line-height: 1.5;">
+               <ul id="sub-project-info">
                   <br>
                   <li>Role: Full stack Development</li>
                   <li>Personal project #1</li>
@@ -81,6 +79,7 @@
                   <li>Learned and Implemented: HTML, CSS, JS, API calls, Project development & deployment</li>
                </ul>
             </li>
+            <!-- adding the links to view this project  -->
             <a href="https://github.com/gitboytushar/weatherApp">
                <button class="btn-a">
                   Source Code
@@ -92,11 +91,8 @@
                </button>
             </a>
 
-
-            <br><br>
-
             <li>CLI APPLICATION • BANK LOAN APPROVAL
-               <ul style="line-height: 1.5;">
+               <ul id="sub-project-info">
                   <br>
                   <li>Role: Analysing Patterns given by classifiers to generate Result</li>
                   <li>5th semester college project (AIML)</li>
@@ -116,10 +112,10 @@
    <div class="container">
       <!-- nesting of list tags -->
       <h4>Skills</h4>
-      <ol>
+      <ol id="info">
          <li>
             Technical:
-            <ul>
+            <ul id="skills-name">
                <li>Experiences with Languages:
                   <ul>
                      <li>Java (preferred)</li>
@@ -164,7 +160,7 @@
 
          <li>
             Soft:
-            <ul>
+            <ul id="skills-name">
                <li>Teamwork</li>
                <li>Problem solver</li>
                <li>Creative and Versatile</li>
