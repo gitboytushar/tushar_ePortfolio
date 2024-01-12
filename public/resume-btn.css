@@ -5,12 +5,10 @@
    transform: translate(-50%, -50%);
 
    border: none;
-   background: none;
+   background: white;
    border-radius: 0rem;
 
    text-decoration: none;
-
-   backdrop-filter: blur(10px);
    
    color: black;
 
