@@ -17,6 +17,9 @@ $(document).ready(function () {
   // Variable to track whether the navigation is due to a user click
   var userClicked = false;
 
+  // Check if the page is being loaded from the cache
+  var isPageLoadedFromCache = true;
+
   // Click event for anchor tags
   $("a").click(function (e) {
     var link = $(this).attr('href');
@@ -30,10 +33,15 @@ $(document).ready(function () {
     e.preventDefault();
     userClicked = true;
 
-    // Show loader and navigate after fadeIn
-    $('.loader-wrapper').fadeIn(1000, function () {
+    // Show loader only if the page is not loaded from the cache
+    if (!isPageLoadedFromCache) {
+      $('.loader-wrapper').fadeIn(1000, function () {
+        window.location.href = link;
+      });
+    } else {
+      // If loaded from cache, navigate without the loader
       window.location.href = link;
-    });
+    }
   });
 
   // Popstate event when navigating back or forward
@@ -42,15 +50,21 @@ $(document).ready(function () {
     if (userClicked) {
       userClicked = false;
     } else {
-      // Show loader when navigating back or forward
-      $('.loader-wrapper').fadeIn(1000);
+      // Show loader only if the page is not loaded from the cache
+      if (!isPageLoadedFromCache) {
+        $('.loader-wrapper').fadeIn(1000);
+      }
     }
   });
 
   // Load event when the page is initially loaded or refreshed
   $(window).on('load', function () {
+    // Set the flag to false when the page is fully loaded
+    isPageLoadedFromCache = false;
+    
     // Hide loader after page is fully loaded
     $('.loader-wrapper').fadeOut(1000);
   });
 });
+
 
