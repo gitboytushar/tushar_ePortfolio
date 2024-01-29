@@ -5,10 +5,16 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>contact-tushar</title>
+
    <link rel="stylesheet" href="./contact-style.css">
+   <script src="./form.js"></script>
 </head>
 
 <body>
+   <a href="../index.html" class="back-btn">
+      <img src="../assets/home.png" alt="homepage icon">
+   </a>
+
    <div class="card">
       <div class="content">
          <div class="info">
@@ -23,12 +29,21 @@
       </div>
    </div>
 
-   <footer>
-      <p>
-         A contact form feature is coming soon...
-      </p>
-   </footer>
-   
+   <!-- added a form to send me emails directly -->
+   <div class="card2">
+      <h3>Get in Touch &#128640;</h3>
+      <!-- used web3forms api for mail service -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+         <input type="hidden" name="access_key" value="529b9b1f-3a60-44dd-adba-abe617a75e6e">
+
+         <input type="text" name="name" placeholder="Your Name" required autocomplete="off">
+         <input type="email" name="user-email" placeholder="Your Email id" required autocomplete="off">
+         <textarea name="message" rows="4" placeholder="Write Your Message..." required autocomplete="off"></textarea>
+
+         <button type="submit" id="submitBtn">Send</button>
+      </form>
+   </div>
+
 </body>
 
 </html>
