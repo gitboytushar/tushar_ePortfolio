@@ -140,9 +140,9 @@ form textarea {
 
 /* back button for homepage */
 .back-btn {
-   position: absolute;
-   left: 23%;
-   top: 9.1%;
+   position: relative;
+   left: 27%;
+   top: 5rem;
    transform: translate(-50%, -50%);
 
    cursor: pointer;
@@ -163,8 +163,25 @@ form textarea {
    filter: grayscale(0%);
 }
 
+/* making this page responsive for tablets */
+@media (max-width: 64rem) {
+
+   /* back button re postioning */
+   .back-btn {
+      position: relative;
+      left: 46.5%;
+      top: .5rem;
+      transform: translate(-50%, -50%);
+   }
+
+   .back-btn img {
+      height: 2.8125rem;
+      filter: grayscale(0);
+   }
+}
+
 /* making this page responsive for smartphone */
-@media screen and (max-width: 37.5rem) {
+@media (max-width: 37.5rem) {
    .card {
       width: 60%;
       padding: 1.5rem;
@@ -211,7 +228,7 @@ form textarea {
    /* back button re postioning */
    .back-btn {
       position: relative;
-      left: 44.6%;
+      left: 44.3%;
       top: .7rem;
       transform: translate(-50%, -50%);
    }
