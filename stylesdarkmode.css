@@ -2,25 +2,25 @@
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* light theme resets */
+/* dark theme resets */
 :root {
-   --website-bg-color-center-gradient: rgb(188, 188, 255);
-   --website-bg-color: rgb(0, 0, 159);
+   --website-bg-color-center-gradient: #222222;
+   --website-bg-color: #222222;
 
-   --bg-color: white;
+   --bg-color: #636363;
 
-   --body-text-color: black;
+   --body-text-color: #eeeeee;
 
-   --projects-btn: rgb(224, 224, 224);
-   --projects-btn-text-color: white;
-   --projects-btn-hover: rgb(76, 76, 76);
+   --projects-btn: #E5E5E5;
+   --projects-btn-text-color: #f4f4f4;
+   --projects-btn-hover: #424242;
 
-   --main-btn-text-color: rgb(87, 87, 239);
-   --main-btn-text-color-hover: white;
-   --main-btn-background-color: rgb(239, 239, 255);
-   --main-btn-background-color-hover: rgb(107, 107, 238);
+   --main-btn-text-color: #E5E5E5;
+   --main-btn-text-color-hover: #f4f4f4;
+   --main-btn-background-color: #424242;
+   --main-btn-background-color-hover: #2d2d2d;
 
-   --footer-text-color: white;
+   --footer-text-color: #f4f4f4;
 }
 
 html {
@@ -111,6 +111,13 @@ html {
 
    height: 12.2rem;
    width: 12.2rem;
+
+   filter: grayscale(100%);
+   transition: filter 0.3s linear;
+}
+
+.dp:hover {
+   filter: none;
 }
 
 /* all other containers */
@@ -506,7 +513,6 @@ footer {
    }
 
    .toggle-btn {
-
       top: 2rem;
       left: 81%;
    }

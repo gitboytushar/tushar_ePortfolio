@@ -6,12 +6,27 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>tusharverma-portfolio</title>
 
-   <link rel="stylesheet" href="./style.css">
+   <!-- we can give id to the link tag also to operate later with javascript -->
+   <link rel="stylesheet" href="./style.css" id="lightTheme">
+   <link rel="stylesheet" href="./stylesdarkmode.css" id="darkTheme">
+
    <link rel="stylesheet" href="./public/resume-btn.css">
+
+   <script src="./public/toggle-btn.js"></script>
 
 </head>
 
 <body>
+   <!-- toggle for theme change -->
+   <div class="toggle-btn">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox" class="toggle-label">
+         <span class="toggle-ball">
+            <img src="./assets/theme.png" alt="theme-icon">
+         </span>
+      </label>
+   </div>
+
    <!-- Resume Download Button with border-animation -->
    <a class="dnl-resume" href="./assets/resume_tushar.pdf">
       <span></span>
