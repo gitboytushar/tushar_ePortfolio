@@ -4,23 +4,23 @@
 
 /* dark theme resets */
 :root {
-   --website-bg-color-center-gradient: #222222;
-   --website-bg-color: #222222;
+   --website-bg-color-center-gradient: #181818;
+   --website-bg-color: #181818;
 
-   --bg-color: #636363;
+   --bg-color: #1E1E1E;
 
-   --body-text-color: #eeeeee;
+   --body-text-color: #A1A1A1;
 
-   --projects-btn: #E5E5E5;
-   --projects-btn-text-color: #f4f4f4;
+   --projects-btn: #1E1E1E;
+   --projects-btn-text-color: #A1A1A1;
    --projects-btn-hover: #424242;
 
-   --main-btn-text-color: #E5E5E5;
-   --main-btn-text-color-hover: #f4f4f4;
-   --main-btn-background-color: #424242;
-   --main-btn-background-color-hover: #2d2d2d;
+   --main-btn-text-color: #A1A1A1;
+   --main-btn-text-color-hover: #1E1E1E;
+   --main-btn-background-color: #1E1E1E;
+   --main-btn-background-color-hover: #A1A1A1;
 
-   --footer-text-color: #f4f4f4;
+   --footer-text-color: #A1A1A1;
 }
 
 html {
@@ -94,6 +94,12 @@ html {
    max-width: 59.3rem;
    border: none;
 }
+/* implemented the text gradient effect on my name in dark mode */
+.container1 #myname {
+   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   -webkit-background-clip: text;
+   color: transparent;
+}
 
 /* styling hero section */
 .dp {
@@ -136,6 +142,10 @@ html {
    border: none;
 }
 
+.edu {
+   line-height: 2rem;
+}
+
 a {
    text-decoration: none;
 }
@@ -154,18 +164,20 @@ h4 {
    font-size: 1.21rem;
 }
 
+/* ----- Project Buttons ----- */
 button {
    border: none;
    background-color: var(--projects-btn);
+   color: var(--projects-btn-text-color);
    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   border: solid 0.05rem var(--projects-btn-text-color);
    border-radius: 0.37rem;
    margin-top: 0.5rem;
 }
 
 button:hover {
-   background-color: var(--projects-btn-hover);
-   color: var(--projects-btn-text-color);
-   font-weight: bold;
+   background-color: var(--projects-btn-text-color);
+   color: var(--website-bg-color);
    cursor: pointer;
 }
 
@@ -179,18 +191,20 @@ button:hover {
    margin-bottom: 1.25rem;
 }
 
+/* ---------------------------- */
+
 .bdg {
    text-decoration: none;
    padding: 0.62rem 0.9rem 0.62rem 0.9rem;
    color: var(--main-btn-text-color);
    border-radius: 1.56rem;
    background-color: var(--main-btn-background-color);
+   border: solid 0.05rem var(--projects-btn-text-color);
 }
 
 .bdg:hover {
    background-color: var(--main-btn-background-color-hover);
    color: var(--main-btn-text-color-hover);
-   font-weight: bold;
    cursor: pointer;
    border: none;
    border-radius: 1.56rem;
@@ -219,7 +233,6 @@ button:hover {
    font-size: 1.1rem;
 }
 
-
 .contact-btn {
    display: block;
    margin-top: 1.06rem;
@@ -230,12 +243,12 @@ button:hover {
    color: var(--main-btn-text-color);
    border-radius: 1.56rem;
    background-color: var(--main-btn-background-color);
+   border: solid 0.05rem var(--projects-btn-text-color);
 }
 
 .contact-btn:hover {
    background-color: var(--main-btn-background-color-hover);
    color: var(--main-btn-text-color-hover);
-   font-weight: bold;
    cursor: pointer;
    border: none;
    border-radius: 1.56rem;
@@ -256,12 +269,12 @@ button:hover {
    color: var(--main-btn-text-color);
    border-radius: 1.56rem;
    background-color: var(--main-btn-background-color);
+   border: solid 0.05rem var(--projects-btn-text-color);
 }
 
 .checkout:hover {
    background-color: var(--main-btn-background-color-hover);
    color: var(--main-btn-text-color-hover);
-   font-weight: bold;
    cursor: pointer;
    border: none;
    border-radius: 1.56rem;

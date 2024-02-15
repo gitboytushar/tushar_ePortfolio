@@ -113,6 +113,12 @@ html {
    width: 12.2rem;
 }
 
+/* Styling the lord icons */
+.icon {
+   width: .1rem;
+   height: .1rem;
+}
+
 /* all other containers */
 .container {
    /* bring containers to page center */
@@ -127,6 +133,10 @@ html {
    border-radius: 0.625rem;
    max-width: 59.3rem;
    border: none;
+}
+
+.edu {
+   line-height: 2rem;
 }
 
 a {
