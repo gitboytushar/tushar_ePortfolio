@@ -8,6 +8,9 @@
 
    <link rel="stylesheet" href="./contact-style.css">
    <script src="./form.js"></script>
+
+   <!-- cdn links for animated lord-icons -->
+   <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </head>
 
 <body>
@@ -18,12 +21,16 @@
    <div class="card">
       <div class="content">
          <div class="info">
-            <img src="../assets/phn.png" alt="phone icon">
+            <lord-icon src="https://cdn.lordicon.com/pofltmuh.json" trigger="hover"
+               colors="primary:#30e849,secondary:#4bb3fd,tertiary:#e4e4e4,quaternary:#f24c00"
+               style="width:3rem;height:3rem">
+            </lord-icon>
             <p class="detail">7217725924</p>
          </div>
 
          <div class="info">
-            <img src="../assets/mail.png" alt="mail icon">
+            <lord-icon src="https://cdn.lordicon.com/nlgttpqe.json" trigger="hover"
+               style="width:3.625rem;height:3.625rem"></lord-icon>
             <p class="detail">tusharwork.001@gmail.com</p>
          </div>
       </div>
@@ -31,7 +38,16 @@
 
    <!-- added a form to send me emails directly -->
    <div class="card2">
-      <h3>Get in Touch &#128640;</h3>
+      <div class="form-header">
+         <div class="title">
+            <h3>Get in Touch</h3>
+         </div>
+         <div class="icon-container">
+            <lord-icon src="https://cdn.lordicon.com/tmqaflqo.json" trigger="loop"
+               style="width:3.125rem;height:3.125rem"></lord-icon>
+         </div>
+      </div>
+
       <!-- used web3forms api for mail service -->
       <form action="https://api.web3forms.com/submit" method="POST">
          <input type="hidden" name="access_key" value="529b9b1f-3a60-44dd-adba-abe617a75e6e">

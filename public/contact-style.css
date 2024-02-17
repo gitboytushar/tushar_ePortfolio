@@ -4,15 +4,31 @@
    margin: 0;
 }
 
+/* color presets for this webpage */
+:root {
+   --main-background: #181818;
+
+   --card-bg-color: white;
+   --card-border-color: #4BB3FD;
+
+   --form-textarea-color: #95cfff15;
+
+   --submit-btn-textcolor-base: #0766AD;
+   --submit-btn-bg-color-base: #95cfff15;
+   --submit-btn-textcolor-filled: #F3F3F3;
+   --submit-btn-bg-color-filled: #0766AD;
+
+}
+
 body {
-   background-color: black;
+   background-color: var(--main-background);
 }
 
 .card {
-   background-color: white;
+   background-color: var(--card-bg-color);
    max-width: 33.4rem;
    padding: 1.56rem;
-   border: 0.37rem solid yellow;
+   border: 0.37rem solid var(--card-border-color);
    border-radius: 0.93rem;
    margin-top: 1.25rem;
 
@@ -47,38 +63,40 @@ img {
    justify-content: center;
 }
 
-/* comming feature awareness */
-footer {
-   text-align: center;
-   font-size: 1.2rem;
-
-   color: black;
-   background: yellow;
-
-   padding: 0.625rem;
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-}
-
 /* styling the contact form */
 .card2 {
-   background-color: white;
+   background-color: var(--card-bg-color);
    max-width: 33.4rem;
    padding: 1.56rem;
-   border: 0.37rem solid yellow;
+   border: 0.37rem solid var(--card-border-color);
    border-radius: 0.93rem;
    margin-top: 1.25rem;
 
    position: relative;
    left: 50%;
    transform: translate(-50%, 0);
+
+   display: inline-block;
 }
 
-.card2 h3 {
+.form-header {
    margin-bottom: 0.9375rem;
    text-align: center;
    font-size: 1.2rem;
+
+   /* To align the child element in center and next to each other */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.title {
+   margin-right: 0.625rem;
+}
+
+.icon-container {
+   display: flex;
+   align-items: center;
 }
 
 form input,
@@ -102,7 +120,7 @@ form textarea {
    /* to remove the expanding arrow from textarea box (by default shows up)  */
    resize: none;
 
-   background-color: rgba(224, 224, 224, 0.257);
+   background-color: var(--form-textarea-color);
    margin: 0.3125rem 0;
    padding: 0.9375rem;
 }
@@ -124,18 +142,18 @@ form textarea {
 
    font-size: 1.0625rem;
 
-   color: #0766AD;
-   background-color: #F3F3F3;
+   color: var(--submit-btn-textcolor-base);
+   background-color: var(--submit-btn-bg-color-base);
 
    transition: 0.15s;
 }
 
 /* toggled when all form fields are filled by user */
 #submitBtn.filled {
-   background-color: #0766AD;
+   background-color: var(--submit-btn-bg-color-filled);
    font-weight: bold;
    cursor: pointer;
-   color: #F3F3F3;
+   color: var(--submit-btn-textcolor-filled);
 }
 
 /* back button for homepage */
