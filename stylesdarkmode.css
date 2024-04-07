@@ -1,5 +1,7 @@
 * {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   /* outline: 0.0625rem solid red; */
 }
 
 /* dark theme resets */
@@ -90,13 +92,15 @@ html {
    margin: 0;
    margin-bottom: 0.3rem;
    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-   border-radius: 0.625rem;
+   border-radius: 0rem;
    max-width: 59.3rem;
    border: none;
 }
+
 /* implemented the text gradient effect on my name in dark mode */
 .container1 #myname {
    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   background-clip: padding-box;
    -webkit-background-clip: text;
    color: transparent;
 }
@@ -104,26 +108,17 @@ html {
 /* styling hero section */
 .dp {
    display: block;
-   border-radius: 0.62rem;
+   border-radius: 0rem;
    margin: 0;
 
    position: fixed;
-   left: 76%;
-   top: 2.5rem;
-   /* only in desktop view */
+   left: 85.9%;
    transform: translate(-50%, 0);
 
-   transform: scale(1.2);
+   margin-block: 0.0125rem;
 
-   height: 12.2rem;
-   width: 12.2rem;
-
-   filter: grayscale(100%);
-   transition: filter 0.3s linear;
-}
-
-.dp:hover {
-   filter: none;
+   height: 15rem;
+   width: 15rem;
 }
 
 /* all other containers */
@@ -137,7 +132,7 @@ html {
    margin: 0;
    margin-bottom: 0.3rem;
    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-   border-radius: 0.625rem;
+   border-radius: 0rem;
    max-width: 59.3rem;
    border: none;
 }
@@ -191,7 +186,7 @@ button:hover {
    margin-bottom: 1.25rem;
 }
 
-/* ---------------------------- */
+
 
 .bdg {
    text-decoration: none;
@@ -395,7 +390,7 @@ footer {
    /* styling the sixth container */
    .bdg {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       text-align: center;
    }
 
@@ -411,10 +406,12 @@ footer {
 @media screen and (max-width: 37.5rem) {
    .container1 {
       max-width: 75%;
+      border-radius: 0.625rem;
    }
 
    .container {
       max-width: 75%;
+      border-radius: 0.625rem;
    }
 
    h4 {
@@ -515,7 +512,7 @@ footer {
    /* styling the sixth container */
    .bdg {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       text-align: center;
    }
 
@@ -528,5 +525,30 @@ footer {
    .toggle-btn {
       top: 2rem;
       left: 81%;
+   }
+
+   footer p {
+      font-size: .7rem;
+   }
+}
+
+/* smaller phone screens */
+@media screen and (max-width: 23.4375rem) {
+   .btn-b {
+      margin-left: 0rem;
+   }
+}
+
+@media screen and (max-width: 20rem) {
+   .btn-a {
+      margin-left: 4.2rem;
+   }
+
+   .btn-b {
+      margin-left: 4.2rem;
+   }
+
+   footer p {
+      font-size: .6rem;
    }
 }

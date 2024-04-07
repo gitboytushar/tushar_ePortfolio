@@ -159,7 +159,7 @@ form textarea {
 /* back button for homepage */
 .back-btn {
    position: relative;
-   left: 27%;
+   left: 25%;
    top: 5rem;
    transform: translate(-50%, -50%);
 

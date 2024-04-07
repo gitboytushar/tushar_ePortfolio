@@ -9,7 +9,7 @@
    border-radius: 0rem;
 
    text-decoration: none;
-   
+
    color: black;
 
    overflow: hidden;
@@ -26,8 +26,8 @@
    font-weight: bold;
 }
 
-.dnl-resume img {
-   height: .9rem;
+.dnl-resume lord-icon {
+   transform: translateY(0.0938rem);
 }
 
 /* custom animation border-wise declaration */
