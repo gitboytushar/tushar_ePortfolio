@@ -34,7 +34,7 @@
       <input type="checkbox" id="checkbox">
       <label for="checkbox" class="toggle-label">
          <span class="toggle-ball">
-            <img src="./assets/theme.png" alt="theme-icon">
+            <img src="./assets/theme.png" alt="theme-icon" style="cursor: pointer;">
          </span>
       </label>
    </div>
@@ -57,9 +57,9 @@
       <div class="intro">
          <h2 class="intro-text" id="myname">Tushar Verma</h2>
 
-         <h3 class="intro-text">Computer Science Student <br> <span class="spec">Likes Web Development</span></h3>
+         <!-- auto typing effect in span tag -->
+         <h3 class="intro-text">Computer Science Student <br> <span class="spec auto-type"></span></h3>
          <p class="intro-text"><span class="bold">Present semester:</span> 8th</p>
-         <!-- <p class="intro-text"><span class="bold">Location:</span> Gurgaon, Haryana, India</p> -->
       </div>
       <br>
       <a class="contact-btn" href="./public/contact.html">Contact Me</a>
@@ -283,6 +283,16 @@
       <p>© Tushar Verma. All rights reserved.</p>
    </footer>
 
+   <!-- auto typing effect in hero section -->
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+      var typed = new Typed(".auto-type", {
+         strings: ["Web Developer", "Graphic Designer", "JAVA Programmer", "Tech Enthusiast", "Creative and Proactive"],
+         typeSpeed: 50,
+         backSpeed: 50,
+         loop: true,
+      })
+   </script>
 </body>
 
 </html>

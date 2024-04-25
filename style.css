@@ -1,5 +1,7 @@
 * {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   /* outline: 0.0625rem solid red; */
 }
 
 /* light theme resets */
@@ -87,12 +89,15 @@ html {
    transform: translate(-50%, 0);
 
    background-color: var(--bg-color);
+
    margin: 0;
    margin-bottom: 0.3rem;
+
    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-   border-radius: 0rem;
    max-width: 59.3rem;
+
    border: none;
+   border-radius: 0rem;
 }
 
 /* styling hero section */
@@ -159,15 +164,20 @@ button {
    border: none;
    background-color: var(--projects-btn);
    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-   border-radius: 0.37rem;
    margin-top: 0.5rem;
+
+   border-radius: 0;
+
+   color: var(--body-text-color);
+
+   transition: .3s ease-in-out;
 }
 
 button:hover {
    background-color: var(--projects-btn-hover);
    color: var(--projects-btn-text-color);
-   font-weight: bold;
    cursor: pointer;
+   border-radius: 1rem;
 }
 
 .btn-a {
@@ -184,18 +194,18 @@ button:hover {
    text-decoration: none;
    padding: 0.62rem 0.9rem 0.62rem 0.9rem;
    color: var(--main-btn-text-color);
-   border-radius: 1.56rem;
+   border-radius: 0;
    background-color: var(--main-btn-background-color);
+
+   transition: .3s ease-in-out;
 }
 
 .bdg:hover {
    background-color: var(--main-btn-background-color-hover);
    color: var(--main-btn-text-color-hover);
-   font-weight: bold;
    cursor: pointer;
    border: none;
    border-radius: 1.56rem;
-   transition: .15s ease-in;
 }
 
 .desc {
@@ -229,14 +239,15 @@ button:hover {
    width: fit-content;
    padding: 0.62rem 11.81rem 0.62rem 11.81rem;
    color: var(--main-btn-text-color);
-   border-radius: 1.56rem;
    background-color: var(--main-btn-background-color);
+   border-radius: 0;
+
+   transition: .3s ease-in-out;
 }
 
 .contact-btn:hover {
    background-color: var(--main-btn-background-color-hover);
    color: var(--main-btn-text-color-hover);
-   font-weight: bold;
    cursor: pointer;
    border: none;
    border-radius: 1.56rem;
@@ -255,18 +266,18 @@ button:hover {
    text-decoration: none;
    padding: 0.62rem 4.30rem 0.62rem 4.30rem;
    color: var(--main-btn-text-color);
-   border-radius: 1.56rem;
    background-color: var(--main-btn-background-color);
+   border-radius: 0;
+
+   transition: .3s ease-in-out;
 }
 
 .checkout:hover {
    background-color: var(--main-btn-background-color-hover);
    color: var(--main-btn-text-color-hover);
-   font-weight: bold;
    cursor: pointer;
-   border: none;
+   /* border: none; */
    border-radius: 1.56rem;
-   transition: .15s ease-in;
 }
 
 footer {
@@ -297,7 +308,7 @@ footer {
       left: 50%;
       transform: translate(-50%, 0);
 
-      border-radius: 50%;
+      border-radius: 0;
    }
 
    .dp {
@@ -398,13 +409,13 @@ footer {
 /* making my webpage responsive for smartphones */
 @media screen and (max-width: 37.5rem) {
    .container1 {
-      max-width: 75%;
-      border-radius: 0.625rem;
+      max-width: 100%;
+      /* border-radius: 0.625rem; */
    }
 
    .container {
-      max-width: 75%;
-      border-radius: 0.625rem;
+      max-width: 100%;
+      /* border-radius: 0.625rem; */
    }
 
    h4 {
@@ -477,7 +488,7 @@ footer {
    .btn-b {
       margin-bottom: 1.25rem;
       position: relative;
-      left: 10%;
+      left: 4.5%;
       transform: translate(-50%, 0);
    }
 
@@ -516,9 +527,8 @@ footer {
    }
 
    .toggle-btn {
-
-      top: 2rem;
-      left: 81%;
+      top: 1.5rem;
+      left: 90%;
    }
 
    footer p {
@@ -528,6 +538,12 @@ footer {
 
 /* smaller phone screens */
 @media screen and (max-width: 23.4375rem) {
+
+   .btn-a,
+   .btn-b {
+      left: 5.8%;
+   }
+
    .btn-b {
       margin-left: 0rem;
    }
@@ -544,5 +560,10 @@ footer {
 
    footer p {
       font-size: .6rem;
+   }
+
+   .toggle-btn {
+      top: 1.5rem;
+      left: 88%;
    }
 }
