@@ -22,8 +22,10 @@
    cursor: pointer;
 }
 
-.dnl-resume:hover {
-   font-weight: bold;
+@media (hover: hover) and (pointer: fine) {
+   .dnl-resume:hover {
+      font-weight: bold;
+   }
 }
 
 .dnl-resume lord-icon {

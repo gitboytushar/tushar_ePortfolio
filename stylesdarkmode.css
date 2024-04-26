@@ -177,11 +177,13 @@ button {
    transition: .3s ease-in-out;
 }
 
-button:hover {
-   background-color: var(--projects-btn-text-color);
-   color: var(--website-bg-color);
-   cursor: pointer;
-   border-radius: 1rem;
+@media (hover: hover) and (pointer: fine) {
+   button:hover {
+      background-color: var(--projects-btn-text-color);
+      color: var(--website-bg-color);
+      cursor: pointer;
+      border-radius: 1rem;
+   }
 }
 
 .btn-a {
@@ -207,12 +209,14 @@ button:hover {
    transition: .3s ease-in-out;
 }
 
-.bdg:hover {
-   background-color: var(--main-btn-background-color-hover);
-   color: var(--main-btn-text-color-hover);
-   cursor: pointer;
-   border: none;
-   border-radius: 1.56rem;
+@media (hover: hover) and (pointer: fine) {
+   .bdg:hover {
+      background-color: var(--main-btn-background-color-hover);
+      color: var(--main-btn-text-color-hover);
+      cursor: pointer;
+      border: none;
+      border-radius: 1.56rem;
+   }
 }
 
 .desc {
@@ -252,12 +256,14 @@ button:hover {
    transition: .3s ease-in-out;
 }
 
-.contact-btn:hover {
-   background-color: var(--main-btn-background-color-hover);
-   color: var(--main-btn-text-color-hover);
-   cursor: pointer;
-   border: none;
-   border-radius: 1.56rem;
+@media (hover: hover) and (pointer: fine) {
+   .contact-btn:hover {
+      background-color: var(--main-btn-background-color-hover);
+      color: var(--main-btn-text-color-hover);
+      cursor: pointer;
+      border: none;
+      border-radius: 1.56rem;
+   }
 }
 
 .spec {
@@ -286,12 +292,14 @@ button:hover {
    transition: .3s ease-in-out;
 }
 
-.checkout:hover {
-   background-color: var(--main-btn-background-color-hover);
-   color: var(--main-btn-text-color-hover);
-   cursor: pointer;
-   /* border: none; */
-   border-radius: 1.56rem;
+@media (hover: hover) and (pointer: fine) {
+   .checkout:hover {
+      background-color: var(--main-btn-background-color-hover);
+      color: var(--main-btn-text-color-hover);
+      cursor: pointer;
+      /* border: none; */
+      border-radius: 1.56rem;
+   }
 }
 
 footer {
