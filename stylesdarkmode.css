@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: "Rubik", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
 
    /* outline: 0.0625rem solid red; */
 }
@@ -158,8 +163,7 @@ ul {
 }
 
 h4 {
-   text-decoration: underline;
-   font-weight: bolder;
+   font-weight: 600 !important;
    font-size: 1.21rem;
 }
 
@@ -174,7 +178,7 @@ button {
 
    border-radius: 0;
 
-   transition: .3s ease-in-out;
+   transition: border-radius .3s ease-in-out;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -189,14 +193,14 @@ button {
 .btn-a {
    margin-left: 2.5rem;
    margin-bottom: 1.25rem;
+   padding-inline: 1.25rem;
 }
 
 .btn-b {
    margin-left: 0.31rem;
    margin-bottom: 1.25rem;
+   padding-inline: 1.25rem;
 }
-
-
 
 .bdg {
    text-decoration: none;
@@ -206,7 +210,7 @@ button {
    background-color: var(--main-btn-background-color);
    border: solid 0.05rem var(--projects-btn-text-color);
 
-   transition: .3s ease-in-out;
+   transition: border-radius .3s ease-in-out;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -245,15 +249,18 @@ button {
    display: block;
    margin-top: 1.06rem;
    margin-left: 0rem;
+
    text-decoration: none;
-   width: fit-content;
-   padding: 0.62rem 11.81rem 0.62rem 11.81rem;
+
+   width: 3.75rem;
+   padding: 0.62rem 12.78rem 0.62rem 12.78rem;
+
    color: var(--main-btn-text-color);
    background-color: var(--main-btn-background-color);
-   border: solid 0.05rem var(--projects-btn-text-color);
+   border: 0.0313rem solid var(--projects-btn-text-color);
    border-radius: 0;
 
-   transition: .3s ease-in-out;
+   transition: border-radius .3s ease-in-out;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -261,7 +268,6 @@ button {
       background-color: var(--main-btn-background-color-hover);
       color: var(--main-btn-text-color-hover);
       cursor: pointer;
-      border: none;
       border-radius: 1.56rem;
    }
 }
@@ -289,7 +295,7 @@ button {
    border: solid 0.05rem var(--projects-btn-text-color);
    border-radius: 0;
 
-   transition: .3s ease-in-out;
+   transition: border-radius .3s ease-in-out;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -396,6 +402,7 @@ footer {
       position: relative;
       left: 45%;
       transform: translate(-50%, 0);
+      padding-inline: 0.5rem;
    }
 
    #sub-project-info {
@@ -560,10 +567,12 @@ footer {
 
 /* smaller phone screens */
 @media screen and (max-width: 23.4375rem) {
+
    .btn-a,
-      .btn-b {
-         left: 5.8%;
-      }
+   .btn-b {
+      left: 5.8%;
+   }
+
    .btn-b {
       margin-left: 0rem;
    }
@@ -582,8 +591,8 @@ footer {
       font-size: .6rem;
    }
 
-      .toggle-btn {
-         top: 1.5rem;
-         left: 88%;
-      }
+   .toggle-btn {
+      top: 1.5rem;
+      left: 88%;
+   }
 }
