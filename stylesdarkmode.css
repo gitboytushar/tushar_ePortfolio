@@ -115,6 +115,16 @@ html {
 }
 
 /* styling hero section */
+@keyframes dpFadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
 .dp {
    display: block;
    border-radius: 0rem;
@@ -128,6 +138,8 @@ html {
 
    height: 15rem;
    width: 15rem;
+
+   animation: dpFadeIn 0.5s ease-in forwards;
 }
 
 /* all other containers */
@@ -156,10 +168,6 @@ a {
 
 ul {
    line-height: 1.5;
-}
-
-.bold {
-   font-weight: bold;
 }
 
 h4 {
@@ -253,7 +261,7 @@ button {
    text-decoration: none;
 
    width: 3.75rem;
-   padding: 0.62rem 12.78rem 0.62rem 12.78rem;
+   padding: 0.62rem 12.73rem 0.62rem 12.73rem;
 
    color: var(--main-btn-text-color);
    background-color: var(--main-btn-background-color);
