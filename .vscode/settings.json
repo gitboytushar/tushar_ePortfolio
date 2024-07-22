@@ -5,5 +5,6 @@
       "editor.tabSize": 2,
       "editor.insertSpaces": false
    },
-   "liveServer.settings.port": 5502
+   "liveServer.settings.port": 5502,
+   "livePreview.defaultPreviewPath": "/index.html"
 }

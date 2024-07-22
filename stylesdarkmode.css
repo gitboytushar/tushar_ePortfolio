@@ -175,7 +175,6 @@ h4 {
    font-size: 1.21rem;
 }
 
-/* ----- Project Buttons ----- */
 button {
    border: none;
    background-color: var(--projects-btn);
@@ -196,18 +195,6 @@ button {
       cursor: pointer;
       border-radius: 1rem;
    }
-}
-
-.btn-a {
-   margin-left: 2.5rem;
-   margin-bottom: 1.25rem;
-   padding-inline: 1.25rem;
-}
-
-.btn-b {
-   margin-left: 0.31rem;
-   margin-bottom: 1.25rem;
-   padding-inline: 1.25rem;
 }
 
 .bdg {
@@ -321,6 +308,87 @@ footer {
    position: absolute;
    left: 50%;
    transform: translate(-50%, 0);
+}
+
+/* project section accordian styles */
+.project-bar {
+   cursor: pointer;
+}
+
+.title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-inline: 0.9375rem;
+   user-select: none;
+}
+
+.title.active {
+   background-color: var(--main-btn-background-color-hover);
+   color: var(--bg-color);
+}
+
+.icon {
+   width: 1.25rem;
+   height: 1.25rem;
+   transition: transform .2s linear;
+}
+
+.icon.active {
+   transform: rotateX(180deg);
+}
+
+.details {
+   display: flex;
+   gap: 1.875rem;
+
+   max-height: 0;
+   overflow: hidden;
+   padding-block: 0;
+   padding-inline: 0.9375rem;
+   line-height: 1.5rem;
+
+   transition: max-height 0.2s ease, padding-block 0.2s ease;
+}
+
+.details.active {
+   padding-top: 1.875rem;
+   padding-bottom: 1.875rem;
+}
+
+.poster {
+   width: 62.5rem;
+}
+
+.poster iframe {
+   width: 100%;
+   aspect-ratio: 16/9;
+}
+
+.project-info p {
+   margin-top: 0;
+   margin-bottom: 0.3125rem;
+}
+
+.btns {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+
+   gap: 0.9375rem;
+}
+
+.btns a {
+   text-decoration: none;
+   color: var(--body-text-color);
+   /* background-color: green; */
+   text-align: center;
+   padding: 0.5rem 0.5rem 0.5rem 0rem;
+   font-size: 1.5625rem;
+}
+
+span.bold {
+   font-weight: 600;
 }
 
 /* making this page responsive for tablets */
@@ -441,6 +509,45 @@ footer {
       font-size: .759rem;
    }
 
+   /* accordian of projects */
+   .details {
+      font-size: 0.8125rem;
+      line-height: 1.2rem;
+   }
+
+   .poster {
+      width: 75rem;
+   }
+}
+
+@media screen and (max-width: 48rem) {
+   .details {
+      flex-direction: column;
+      gap: 0.625rem;
+
+      max-height: 0;
+      overflow: hidden;
+      padding-block: 0;
+      padding-inline: 0.9375rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      transition: max-height 0.2s ease, padding-block 0.2s ease;
+   }
+
+   .details.active {
+      padding-top: 1.875rem;
+      padding-bottom: 1.875rem;
+   }
+
+   .poster {
+      width: 100%;
+   }
+
+   .project-info p {
+      margin-top: 0;
+      margin-bottom: 0.625rem;
+   }
 }
 
 /* making my webpage responsive for smartphones */
