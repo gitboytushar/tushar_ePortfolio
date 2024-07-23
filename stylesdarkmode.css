@@ -250,8 +250,8 @@ button {
    width: 3.75rem;
    padding: 0.62rem 12.73rem 0.62rem 12.73rem;
 
-   color: var(--main-btn-text-color);
-   background-color: var(--main-btn-background-color);
+   color: var(--main-btn-text-color-hover);
+   background-color: var(--main-btn-background-color-hover);
    border: 0.0313rem solid var(--projects-btn-text-color);
    border-radius: 0;
 
@@ -366,6 +366,10 @@ footer {
    aspect-ratio: 16/9;
 }
 
+.project-info {
+   width: 75rem;
+}
+
 .project-info p {
    margin-top: 0;
    margin-bottom: 0.3125rem;
@@ -440,6 +444,29 @@ span.bold {
    border-radius: 50%;
    background-color: var(--bg-color);
    color: white;
+   transition: background-color, color 0.2s linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+   .code:hover {
+      background: linear-gradient(45deg, #211951, #836FFF, #15F5BA, #F0F3FF);
+      color: black;
+   }
+
+   .preview:hover {
+      background: linear-gradient(45deg, #059212, #06D001, #9BEC00, #F3FF90);
+      color: black;
+   }
+
+   .video:hover {
+      background: linear-gradient(45deg, #0C1844, #C80036, #FF6969, #FFF5E1);
+      color: black;
+   }
+
+   .report:hover {
+      background: linear-gradient(45deg, #050C9C, #3572EF, #3ABEF9, #A7E6FF);
+      color: black;
+   }
 }
 
 .team-icon {
@@ -462,6 +489,8 @@ span.bold {
    position: absolute;
    top: 3.3rem;
    font-size: 1rem;
+   color: white;
+   pointer-events: none;
 }
 
 /* making this page responsive for tablets */
@@ -607,6 +636,10 @@ span.bold {
 }
 
 @media screen and (max-width: 48rem) {
+   .project-info {
+      width: 100%;
+   }
+
    .details {
       flex-direction: column;
       gap: 0.625rem;
