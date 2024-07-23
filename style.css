@@ -310,6 +310,7 @@ footer {
    justify-content: space-between;
    padding-inline: 0.9375rem;
    user-select: none;
+   transition: background-color 0.2s ease;
 }
 
 .title.active {
@@ -377,6 +378,78 @@ footer {
 
 span.bold {
    font-weight: 600;
+}
+
+/* college project section */
+.block {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 3.125rem;
+   padding-inline: 1.25rem;
+}
+
+.about-the-project {
+   width: 87.5rem;
+}
+
+.about-the-project p {
+   margin: 0;
+   margin-bottom: 0.5625rem;
+   line-height: 1.4rem;
+}
+
+.picture img {
+   width: 100%;
+}
+
+.all-links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1.125rem;
+
+   position: relative;
+   bottom: 2.2rem;
+
+   font-size: 1.3rem;
+   z-index: 2;
+}
+
+.all-links a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   width: 2.1875rem;
+   height: 2.1875rem;
+   padding: 0.625rem;
+   border: 0.125rem solid black;
+   border-radius: 50%;
+   background-color: white;
+   color: black;
+}
+
+.team-icon {
+   width: 9.375rem;
+}
+
+.team-info {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 0.625rem;
+   margin-top: 1.5625rem;
+}
+
+.team-info p {
+   margin-top: 0.875rem;
+}
+
+.tooltip {
+   position: absolute;
+   top: 3.3rem;
+   font-size: 1rem;
 }
 
 /* ---------- responsive code for tablets -------------- */
@@ -507,6 +580,19 @@ span.bold {
    .poster {
       width: 75rem;
    }
+
+   .block {
+      flex-direction: column-reverse;
+      gap: 1.5625rem;
+   }
+
+   .about-the-project {
+      width: 100%;
+   }
+
+   .team-info {
+      margin-top: 0.9375rem;
+   }
 }
 
 @media screen and (max-width: 48rem) {
@@ -617,15 +703,6 @@ span.bold {
       font-size: 0.895rem;
    }
 
-   /* styling the forth container */
-   .btn-a,
-   .btn-b {
-      margin-bottom: 1.25rem;
-      position: relative;
-      left: 4.5%;
-      transform: translate(-50%, 0);
-   }
-
    #project-info {
       position: relative;
       left: 45%;
@@ -668,30 +745,42 @@ span.bold {
    footer p {
       font-size: .7rem;
    }
+
+   .about-the-project p {
+      font-size: 0.9375rem;
+   }
+
+   .block {
+      gap: 0.9375rem;
+   }
+
+   .all-links {
+      gap: 1.875rem;
+      bottom: 1.85rem;
+      font-size: 1.2rem;
+   }
+
+   .all-links a {
+      width: 1.25rem;
+      height: 1.25rem;
+      padding: 0.625rem;
+      border: 0.0938rem solid black;
+   }
+
+   .tooltip {
+      top: 2.2rem;
+      font-size: 0.8rem;
+   }
 }
 
 /* smaller phone screens */
 @media screen and (max-width: 23.4375rem) {
-
-   .btn-a,
-   .btn-b {
-      left: 5.8%;
-   }
-
-   .btn-b {
-      margin-left: 0rem;
+   .all-links {
+      gap: 1.125rem;
    }
 }
 
 @media screen and (max-width: 20rem) {
-   .btn-a {
-      margin-left: 4.2rem;
-   }
-
-   .btn-b {
-      margin-left: 4.2rem;
-   }
-
    footer p {
       font-size: .6rem;
    }
@@ -699,5 +788,9 @@ span.bold {
    .toggle-btn {
       top: 1.5rem;
       left: 88%;
+   }
+
+   .all-links {
+      gap: 0.625rem;
    }
 }

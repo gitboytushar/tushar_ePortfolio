@@ -5,6 +5,11 @@
       "editor.tabSize": 2,
       "editor.insertSpaces": false
    },
-   "liveServer.settings.port": 5502,
-   "livePreview.defaultPreviewPath": "/index.html"
+   "liveServer.settings.port": 5500,
+   "livePreview.defaultPreviewPath": "/index.html",
+   "css.validate": true,
+   "tailwindCSS.validate": true,
+   "html.suggest.html5": true,
+   "html.validate.styles": true,
+   "prettier.htmlWhitespaceSensitivity": "css"
 }
