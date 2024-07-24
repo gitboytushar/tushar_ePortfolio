@@ -798,10 +798,11 @@ span.bold {
 
    .block {
       gap: 0.9375rem;
+      padding-inline: 0;
    }
 
    .all-links {
-      gap: 1.875rem;
+      gap: 1.5rem;
       bottom: 1.85rem;
       font-size: 1.2rem;
    }
@@ -823,6 +824,7 @@ span.bold {
 @media screen and (max-width: 23.4375rem) {
    .all-links {
       gap: 1.125rem;
+      font-size: 1rem;
    }
 }
 
