@@ -81,6 +81,21 @@
    </div>
 
    <!-- college final project section -->
+   <!-- video 1 -->
+   <div class="video-overlay" id="videoOverlay1">
+      <iframe src="https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1"
+         title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+   <!-- video 2 -->
+   <div class="video-overlay" id="videoOverlay2">
+      <iframe src="https://www.youtube.com/embed/cgNlGu0HOn0?si=mAZ7iyNJe_m5UEuH&amp;controls=1"
+         title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+   <!-- details about the project -->
    <div class="container">
       <h4>College Project</h4>
       <div class="block">
@@ -110,12 +125,12 @@
                      style="transform: translate(1px,0px);"></i>
                   <p class="tooltip">preview</p>
                </a>
-               <a class="video" href="https://youtu.be/miP1INfMZG4?si=ckZkI4WQ68Ps8m_O" target="_blank"><i
-                     class="bi bi-youtube" style="transform: translateY(2px);"></i>
+               <a class="video" id="playVideo1" href="#" target="_blank"><i class="bi bi-youtube"
+                     style="transform: translateY(2px);"></i>
                   <p class="tooltip">video 1</p>
                </a>
-               <a class="video" href="https://youtu.be/miP1INfMZG4?si=ckZkI4WQ68Ps8m_O" target="_blank"><i
-                     class="bi bi-youtube" style="transform: translateY(2px);"></i>
+               <a class="video" id="playVideo2" href="#" target="_blank"><i class="bi bi-youtube"
+                     style="transform: translateY(2px);"></i>
                   <p class="tooltip">video 2</p>
                </a>
                <a class="report"
@@ -130,7 +145,7 @@
 
    <!-- accordian section of projects -->
    <div class="container">
-      <h4>More<span class="dark-mode-gradient"> Projects</span></h4>
+      <h4 class="dark-mode-gradient">More Projects</h4>
       <!-- project 1 -->
       <div class="project-bar">
          <div class="title">
@@ -287,7 +302,7 @@
       <h4>Knowledge</h4>
       <ol id="info">
          <li>
-            <span class="dark-mode-gradient">Technical skills:</span>
+            <span class="dark-mode-gradient" style="font-weight: 500;">Technical skills:</span>
             <ul id="skills-name" style="line-height: 1.8rem;">
                <li>Programming Languages:
                   <ul>
@@ -341,7 +356,7 @@
          <br>
 
          <li>
-            <span>Soft skills:</span>
+            <span style="font-weight: 500;">Soft skills:</span>
             <ul id="skills-name" style="line-height: 1.8rem;">
                <li>Growth Mindset</li>
                <li>Problem Solving</li>
@@ -354,7 +369,7 @@
    </div>
 
    <!-- cloud badges section -->
-   <div class="container" style="padding-bottom: 40px;">
+   <div class="container" style="padding-bottom: 30px;">
       <h4><span class="dark-mode-gradient">Cloud Computing Badges</span>, <br> College Curriculum</h4>
 
       <div class="cards">
@@ -433,6 +448,9 @@
          });
       });
    </script>
+
+   <!-- servispot video overlay play -->
+   <script src="./public/overlayVideoPlay.js"></script>
 </body>
 
 </html>
