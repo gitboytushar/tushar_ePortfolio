@@ -211,8 +211,8 @@ button {
 }
 
 .desc {
-   width: 90%;
-   text-align: justify;
+   width: 100%;
+   text-align: left;
 }
 
 .intro {
@@ -553,19 +553,9 @@ span.bold {
 
    /* styling the third container */
    .desc {
-      width: fit-content;
+      width: 95%;
       text-align: left;
       font-size: 0.895rem;
-   }
-
-   /* styling the forth container */
-   .btn-a,
-   .btn-b {
-      margin-bottom: 1.25rem;
-      position: relative;
-      left: 2%;
-      transform: translate(-50%, 0);
-      padding-inline: 0.5rem;
    }
 
    #project-info {
@@ -733,8 +723,8 @@ span.bold {
 
    /* styling the third container */
    .desc {
-      width: fit-content;
-      text-align: left;
+      width: 100%;
+      text-align: center !important;
       font-size: 0.895rem;
    }
 
