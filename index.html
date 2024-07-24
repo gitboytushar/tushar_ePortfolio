@@ -130,7 +130,7 @@
 
    <!-- accordian section of projects -->
    <div class="container">
-      <h4 class="dark-mode-gradient">More Projects</h4>
+      <h4>More<span class="dark-mode-gradient"> Projects</span></h4>
       <!-- project 1 -->
       <div class="project-bar">
          <div class="title">
@@ -287,7 +287,7 @@
       <h4>Knowledge</h4>
       <ol id="info">
          <li>
-            <span style="font-weight: bold;">Technical skills:</span>
+            <span class="dark-mode-gradient">Technical skills:</span>
             <ul id="skills-name" style="line-height: 1.8rem;">
                <li>Programming Languages:
                   <ul>
@@ -341,7 +341,7 @@
          <br>
 
          <li>
-            <span style="font-weight: bold;">Soft skills:</span>
+            <span>Soft skills:</span>
             <ul id="skills-name" style="line-height: 1.8rem;">
                <li>Growth Mindset</li>
                <li>Problem Solving</li>
@@ -353,13 +353,24 @@
       </ol>
    </div>
 
-   <!-- cloud badges -->
+   <!-- cloud badges section -->
    <div class="container" style="padding-bottom: 40px;">
-      <h4 class="dark-mode-gradient">Cloud Computing Badges, College Curriculum</h4>
-      <a class="bdg" href="https://www.cloudskillsboost.google/public_profiles/ef2a273a-f0be-44d9-bbfd-49b17b329797"
-         target="_blank">Google Cloud Provider | 2022</a>
-      <a class="bdg" href="https://www.credly.com/users/tushar-verma.c4e5ab35" target="_blank">Amazon Web Services |
-         2022, 2023</a>
+      <h4><span class="dark-mode-gradient">Cloud Computing Badges</span>, <br> College Curriculum</h4>
+
+      <div class="cards">
+         <!-- badge 1 -->
+         <a class="badge-link"
+            href="https://www.cloudskillsboost.google/public_profiles/ef2a273a-f0be-44d9-bbfd-49b17b329797"
+            target="_blank">
+            <img src="./assets/gcp banner.jpg" alt="google cloud provider banner">
+            <p>Earned in 2022 <i class="hover-state-icon bi bi-box-arrow-up-right"></i></p>
+         </a>
+         <!-- badge 2 -->
+         <a class="badge-link" href="https://www.credly.com/users/tushar-verma.c4e5ab35" target="_blank">
+            <img src="./assets/aws banner.jpg" alt="aws banner">
+            <p>Earned in 2022-2023 <i class="hover-state-icon bi bi-box-arrow-up-right"></i></p>
+         </a>
+      </div>
    </div>
 
    <div class="container">
@@ -405,6 +416,23 @@
 
    <!-- accordian script -->
    <script src="./public/projectsAccordian.js"></script>
+
+   <!-- script of badge link icon show -->
+   <script>
+      const badgeLinks = document.querySelectorAll('.badge-link');
+
+      badgeLinks.forEach(link => {
+         link.addEventListener('mouseover', () => {
+            const icon = link.querySelector('.hover-state-icon');
+            icon.classList.add('active');
+         });
+
+         link.addEventListener('mouseout', () => {
+            const icon = link.querySelector('.hover-state-icon');
+            icon.classList.remove('active');
+         });
+      });
+   </script>
 </body>
 
 </html>

@@ -168,6 +168,11 @@ h4 {
    font-size: 1.21rem;
 }
 
+h4>span {
+   font-weight: 600 !important;
+   font-size: 1.21rem;
+}
+
 button {
    border: none;
    background-color: var(--projects-btn);
@@ -190,24 +195,60 @@ button {
    }
 }
 
-.bdg {
-   text-decoration: none;
-   padding: 0.62rem 0.9rem 0.62rem 0.9rem;
-   color: var(--main-btn-text-color);
-   border-radius: 0;
-   background-color: var(--main-btn-background-color);
-
-   transition: border-radius .3s ease-in-out;
+.cards {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 1.25rem;
+   width: 100%;
 }
 
-@media (hover: hover) and (pointer: fine) {
-   .bdg:hover {
-      background-color: var(--main-btn-background-color-hover);
-      color: var(--main-btn-text-color-hover);
-      cursor: pointer;
-      border: none;
-      border-radius: 1.56rem;
+.badge-link {
+   width: 50%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+
+   color: var(--body-text-color);
+
+   cursor: pointer;
+}
+
+.badge-link p {
+   display: flex;
+   align-items: center;
+   gap: 0.9375rem;
+   width: 100%;
+   font-size: 1.1rem;
+   margin: 0;
+   margin-top: 0.625rem;
+}
+
+.badge-link img {
+   width: 100%;
+}
+
+@keyframes iconShow {
+   from {
+      opacity: 0;
+      transform: translate(-0.3125rem, 0rem);
    }
+
+   to {
+      opacity: 1;
+      transform: translate(0rem, -0.1125rem);
+   }
+}
+
+.hover-state-icon {
+   display: none;
+   animation: iconShow 0.4s ease-in-out forwards;
+}
+
+.hover-state-icon.active {
+   display: block;
 }
 
 .desc {
@@ -579,13 +620,6 @@ span.bold {
       font-size: .859rem;
    }
 
-   /* styling the sixth container */
-   .bdg {
-      display: block;
-      margin-bottom: 0.625rem;
-      text-align: center;
-   }
-
    /* styling footer */
    .footer {
       text-align: center;
@@ -613,6 +647,11 @@ span.bold {
 
    .team-info {
       margin-top: 0.9375rem;
+   }
+
+   .hover-state-icon {
+      display: block;
+      margin-top: 0.125rem;
    }
 }
 
@@ -724,7 +763,6 @@ span.bold {
    /* styling the third container */
    .desc {
       width: 100%;
-      text-align: center !important;
       font-size: 0.895rem;
    }
 
@@ -747,13 +785,6 @@ span.bold {
       transform: translate(-50%, 0);
       margin-top: 0.4125rem;
       font-size: .859rem;
-   }
-
-   /* styling the sixth container */
-   .bdg {
-      display: block;
-      margin-bottom: 0.625rem;
-      text-align: center;
    }
 
    /* styling footer */
@@ -796,6 +827,15 @@ span.bold {
    .tooltip {
       top: 2.2rem;
       font-size: 0.8rem;
+   }
+
+   .cards {
+      flex-direction: column;
+      gap: 1.875rem;
+   }
+
+   .badge-link {
+      width: 100%;
    }
 }
 
